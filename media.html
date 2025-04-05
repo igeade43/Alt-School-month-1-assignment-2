@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media</title>
+  </head>
+  <body>
+    <h1>About Me - Ige Hakeem</h1>
+
+    <div>
+      <!-- Responsive Picture Element -->
+      <h2>My Profile Picture</h2>
+
+      <picture>
+        <!-- Image for Mobile (small screens) -->
+        <source srcset="Asset/mobile_view.JPG" media="(max-width: 767px)" />
+        <!-- Image for Tablet (medium screens) -->
+        <source srcset="Asset/tablet.JPG" media="(min-width: 768px)" />
+        <!-- Default image for Laptops & Larger Screens -->
+        <source srcset="Asset/laptop_view.JPG" media="(min-width: 1024px)" />
+
+        <img
+          src="Asset/new.JPG"
+          alt="Ige Hakeem's Profile Picture"
+          width="100%"
+          height="auto"
+        />
+      </picture>
+    </div>
+
+    <div>
+      <h2>My Voice Message</h2>
+      <audio src="Asset/audio.m4a" controls></audio>
+    </div>
+
+    <div>
+      <h2>Video Message</h2>
+      <video src="Asset/video.mp4" controls width="500px"></video>
+    </div>
+
+    <a href="index.html">Go to previous page</a>
+  </body>
+</html>
